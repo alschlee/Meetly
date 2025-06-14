@@ -3,4 +3,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="meetlygray1">#4A4A4A</color>
+    <color name="meetlygray2">#AFAFAF</color>
 </resources>
