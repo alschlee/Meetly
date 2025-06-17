@@ -37,7 +37,7 @@ class LoginFragment : Fragment() {
             }
         }
 
-        val btnSignup = view.findViewById<View>(R.id.tv_signup_link)
+        val btnSignup = view.findViewById<View>(R.id.btn_signup)
         btnSignup?.setOnClickListener {
             (activity as? AuthActivity)?.navigateToSignup()
         }
