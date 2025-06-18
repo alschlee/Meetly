@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.aph4.databinding.ActivityMainBinding
 import com.example.aph4.feature_home.presentation.HomeFragment
+import com.example.aph4.feature_auth.presentation.LoginActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -16,12 +17,11 @@ class MainActivity : AppCompatActivity() {
 
         // SharedPreferences에서 로그인 여부 확인
         val prefs = getSharedPreferences("auth", MODE_PRIVATE)
-        // prefs.edit().clear().apply()
         val isLoggedIn = prefs.getBoolean("is_logged_in", false)
 
         if (!isLoggedIn) {
-            // 로그인 안 됨 → AuthActivity로 이동
-            val intent = Intent(this, com.example.aph4.feature_auth.presentation.AuthActivity::class.java)
+            // 로그인 안 됨 → LoginActivity로 이동
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
             return
@@ -35,4 +35,3 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
-

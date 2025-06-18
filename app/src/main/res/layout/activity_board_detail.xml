@@ -1,0 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:padding="24dp">
+    <TextView android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="제목" android:textStyle="bold" android:textSize="18sp"/>
+    <TextView android:id="@+id/tv_writer" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="작성자"/>
+    <TextView android:id="@+id/tv_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="작성일"/>
+    <TextView android:id="@+id/tv_viewcount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="조회수"/>
+    <TextView android:id="@+id/tv_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="내용" android:layout_marginTop="16dp"/>
+</LinearLayout>
